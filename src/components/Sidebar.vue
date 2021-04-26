@@ -11,16 +11,19 @@
         <div class="sidebar-wrapper">
             <ul class="nav">
                 <li class="nav-item active  ">
-                    <a class="nav-link" href="./dashboard.html">
+                    <router-link to="/dashboard" class="nav-link" >
                         <i class="material-icons">dashboard</i>
                         <p>Dashboard</p>
-                    </a>
+                    </router-link>
+<!--                    <a class="nav-link" href="./dashboard.html">-->
+<!--                        -->
+<!--                    </a>-->
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./user.html">
+                    <router-link class="nav-link" to="./about">
                         <i class="material-icons">person</i>
                         <p>User Profile</p>
-                    </a>
+                    </router-link>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="./tables.html">

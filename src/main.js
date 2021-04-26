@@ -1,16 +1,15 @@
-import './assets/js/core/jquery.min.js'
-import './assets/js/core/popper.min.js'
-//import './assets/js/core/bootstrap-material-design.min.js'
-//import './assets/js/plugins/perfect-scrollbar.jquery.min.js'
-//import './assets/js/material-dashboard.js?v=2.1.2'
-import './assets/demo/demo.js'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 Vue.config.productionTip = false
 
 new Vue({
-  router,
+  router, BootstrapVue, IconsPlugin,
   render: h => h(App)
 }).$mount('#app')
