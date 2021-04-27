@@ -3,7 +3,7 @@
         container-classes="container-fluid"
         class="navbar-top navbar-expand"
         :class="{'navbar-dark': type === 'default'}">
-        <a href="#" aria-current="page" class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block active router-link-active"> {{$route.name}} </a>
+        <a href="#" aria-current="page" class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block active router-link-active">{{$route.name}}</a>
 
         <b-navbar-nav class="align-items-center ml-md-auto">
 
@@ -34,10 +34,10 @@
                 <a href="#" class="nav-link pr-0" @click.prevent slot="title-container">
                     <b-media no-body class="align-items-center">
                         <span class="avatar avatar-sm rounded-circle">
-                            <img alt="Image placeholder" src="img/theme/team-4.jpg">
+                            <img alt="Image placeholder" src="img/lechatong.jpg">
                         </span>
                         <b-media-body class="ml-2 d-none d-lg-block">
-                            <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                            <span class="mb-0 text-sm  font-weight-bold">LeChatong</span>
                         </b-media-body>
                     </b-media>
                 </a>
@@ -80,7 +80,7 @@
     import { BaseNav, Modal } from '@/components'
 
     export default {
-        name: "DashboardNavbar",
+        name: "dashboard-navbar",
         components: {
             CollapseTransition,
             BaseNav,
@@ -120,7 +120,3 @@
         }
     }
 </script>
-
-<style scoped>
-
-</style>

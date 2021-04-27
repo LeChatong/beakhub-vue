@@ -1,6 +1,6 @@
 <template>
-    <div>
 
+    <div>
         <base-header class="pb-6 pb-8 pt-5 pt-md-8 bg-gradient-success">
             <!-- Card stats -->
             <b-row>
@@ -151,14 +151,11 @@
     //import PageVisitsTable from './Dashboard/PageVisitsTable';
 
     export default {
-        name: "Dashboard",
         components: {
             LineChart,
             BarChart,
             BaseProgress,
-            StatsCard,
-            PageVisitsTable,
-            SocialTrafficTable
+            StatsCard
         },
         data() {
             return {

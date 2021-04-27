@@ -122,7 +122,6 @@
     import { FadeTransition } from 'vue2-transitions';
 
     export default {
-        name: "DashboardLayout",
         components: {
             DashboardNavbar,
             ContentFooter,
@@ -143,6 +142,6 @@
     };
 </script>
 
-<style scoped>
+<style lang="scss">
 
 </style>
