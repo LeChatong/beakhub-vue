@@ -14,9 +14,9 @@
 
                 <sidebar-item
                       :link="{
-                      name: 'Icons',
-                      path: '/icons',
-                      icon: 'ni ni-planet text-blue'
+                      name: 'Users',
+                      path: '/users',
+                      icon: 'ni ni-circle-08 text-blue'
                       }">
                 </sidebar-item>
 
