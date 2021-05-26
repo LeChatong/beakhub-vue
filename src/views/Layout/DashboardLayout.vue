@@ -14,7 +14,7 @@
 
                 <sidebar-item
                       :link="{
-                      name: 'Users',
+                      name: 'My Profile',
                       path: '/users',
                       icon: 'ni ni-circle-08 text-blue'
                       }">
@@ -22,13 +22,12 @@
 
                 <sidebar-item
                         :link="{
-                        name: 'Maps',
-                        path: '/maps',
-                        icon: 'ni ni-pin-3 text-orange'
-              }">
+                        name: 'My Job',
+                        path: '/jobs',
+                        icon: 'ni ni ni-briefcase-24 text-orange'}">
                 </sidebar-item>
 
-                <sidebar-item
+                <!--<sidebar-item
                         :link="{
                         name: 'User Profile',
                         path: '/profile',
@@ -58,32 +57,32 @@
                         path: '/register',
                         icon: 'ni ni-circle-08 text-pink'
                       }">
-                </sidebar-item>
+                </sidebar-item>-->
 
             </template>
 
             <template slot="links-after">
                 <hr class="my-3">
-                <h6 class="navbar-heading p-0 text-muted">Documentation</h6>
+                <h6 class="navbar-heading p-0 text-muted">Help</h6>
 
                 <b-nav class="navbar-nav mb-md-3">
                     <b-nav-item
-                            href="https://www.creative-tim.com/learning-lab/bootstrap-vue/quick-start/argon-dashboard"
-                    >
-                        <i class="ni ni-spaceship"></i>
-                        <b-nav-text class="p-0">Getting started</b-nav-text>
+                            href="https://www.creative-tim.com/learning-lab/bootstrap-vue/quick-start/argon-dashboard">
+                        <i class="ni ni ni-collection"></i>
+                        <b-nav-text class="p-0">Documentation</b-nav-text>
                     </b-nav-item>
-                    <b-nav-item href="https://www.creative-tim.com/learning-lab/bootstrap-vue/colors/argon-dashboard">
+                    <!--<b-nav-item href="https://www.creative-tim.com/learning-lab/bootstrap-vue/colors/argon-dashboard">
                         <i class="ni ni-palette"></i>
                         <b-nav-text class="p-0">Foundation</b-nav-text>
                     </b-nav-item>
                     <b-nav-item href="https://www.creative-tim.com/learning-lab/bootstrap-vue/avatar/argon-dashboard">
                         <i class="ni ni-ui-04"></i>
                         <b-nav-text class="p-0">Components</b-nav-text>
-                    </b-nav-item>
+                    </b-nav-item>-->
                 </b-nav>
             </template>
         </side-bar>
+
         <div class="main-content">
             <dashboard-navbar :type="$route.meta.navbarType"></dashboard-navbar>
 

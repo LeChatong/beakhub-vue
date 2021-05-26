@@ -4,7 +4,7 @@
         <b-container fluid class="mt--7">
             <b-row>
                 <b-col>
-                    <user-list v-show="typecontent === 'list'" @add-user-event="changeContent"/>
+                    <!--<user-list v-show="typecontent === 'list'" @add-user-event="changeContent"/>-->
                     <user-edit v-show="typecontent === 'edit'" @list-user-event="changeContent"/>
                 </b-col>
             </b-row>
@@ -22,7 +22,7 @@
         name: "Users",
         data() {
             return {
-                typecontent: 'list'
+                typecontent: 'edit'
             }
         },
         props: { },
