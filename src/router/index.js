@@ -1,10 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import DashboardLayout from "@/views/Layout/DashboardLayout";
+import HomeLayout from "@/views/Layout/HomeLayout";
 
 Vue.use(VueRouter)
 
 const routes = [
+    {
+        path: '/',
+        component: HomeLayout,
+        redirect: 'home',
+        children: [
+            {
+                name: 'home',
+                path: '/home',
+                component: () => import('../views/Home/Home')
+            },
+            {
+                name: 'login',
+                path: '/login',
+                component: () => import('../views/Home/Login')
+            }
+        ]
+    },
     {
         path: '/',
         component: DashboardLayout,
@@ -13,7 +31,7 @@ const routes = [
             {
                 name: 'dashboard',
                 path: '/dashboard',
-                component: () => import('../views/Dashboard')
+                component: () => import('../views/Dashboard/Dashboard')
             },
             {
                 name: 'users',
